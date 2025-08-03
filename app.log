@@ -1,0 +1,68 @@
+2025-08-03 19:58:43,795 - INFO - Starting Flask application
+2025-08-03 19:58:43,904 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.18.68:5000
+2025-08-03 19:58:43,905 - INFO - [33mPress CTRL+C to quit[0m
+2025-08-03 19:58:43,907 - INFO -  * Restarting with stat
+2025-08-03 19:58:44,316 - INFO - Starting Flask application
+2025-08-03 19:58:44,337 - WARNING -  * Debugger is active!
+2025-08-03 19:58:44,341 - INFO -  * Debugger PIN: 765-752-686
+2025-08-03 19:59:14,392 - INFO - Starting Flask application
+2025-08-03 19:59:14,413 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.18.68:5000
+2025-08-03 19:59:14,414 - INFO - [33mPress CTRL+C to quit[0m
+2025-08-03 19:59:14,416 - INFO -  * Restarting with stat
+2025-08-03 19:59:14,747 - INFO - Starting Flask application
+2025-08-03 19:59:14,758 - WARNING -  * Debugger is active!
+2025-08-03 19:59:14,761 - INFO -  * Debugger PIN: 765-752-686
+2025-08-03 19:59:31,134 - INFO - Health check requested
+2025-08-03 19:59:31,135 - INFO - 127.0.0.1 - - [03/Aug/2025 19:59:31] "GET /health HTTP/1.1" 200 -
+2025-08-03 20:01:12,969 - INFO - Starting Flask application
+2025-08-03 20:01:12,994 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.18.68:5000
+2025-08-03 20:01:12,994 - INFO - [33mPress CTRL+C to quit[0m
+2025-08-03 20:01:12,995 - INFO -  * Restarting with stat
+2025-08-03 20:01:13,322 - INFO - Starting Flask application
+2025-08-03 20:01:13,338 - WARNING -  * Debugger is active!
+2025-08-03 20:01:13,341 - INFO -  * Debugger PIN: 765-752-686
+2025-08-03 20:01:26,543 - INFO - Health check requested
+2025-08-03 20:01:26,543 - INFO - 127.0.0.1 - - [03/Aug/2025 20:01:26] "GET /health HTTP/1.1" 200 -
+2025-08-03 20:02:43,850 - INFO - Starting Flask application
+2025-08-03 20:02:43,898 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.18.68:5000
+2025-08-03 20:02:43,898 - INFO - [33mPress CTRL+C to quit[0m
+2025-08-03 20:02:43,900 - INFO -  * Restarting with stat
+2025-08-03 20:02:44,528 - INFO - Starting Flask application
+2025-08-03 20:02:44,557 - WARNING -  * Debugger is active!
+2025-08-03 20:02:44,576 - INFO -  * Debugger PIN: 765-752-686
+2025-08-03 20:02:57,596 - INFO -  * Detected change in 'c:\\Users\\PMLS\\Desktop\\DocumentVerifier\\client\\client.py', reloading
+2025-08-03 20:02:57,793 - INFO -  * Restarting with stat
+2025-08-03 20:02:58,173 - INFO - Starting Flask application
+2025-08-03 20:02:58,232 - WARNING -  * Debugger is active!
+2025-08-03 20:02:58,250 - INFO -  * Debugger PIN: 765-752-686
+2025-08-03 20:03:32,354 - INFO - Health check requested
+2025-08-03 20:03:32,355 - INFO - 127.0.0.1 - - [03/Aug/2025 20:03:32] "GET /health HTTP/1.1" 200 -
+2025-08-03 20:05:00,225 - INFO -  * Detected change in 'c:\\Users\\PMLS\\Desktop\\DocumentVerifier\\client\\client.py', reloading
+2025-08-03 20:05:00,282 - INFO -  * Restarting with stat
+2025-08-03 20:05:00,763 - INFO - Starting Flask application
+2025-08-03 20:05:00,781 - WARNING -  * Debugger is active!
+2025-08-03 20:05:00,783 - INFO -  * Debugger PIN: 765-752-686
+2025-08-03 20:05:52,561 - INFO - Starting Flask application
+2025-08-03 20:05:52,584 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.18.68:5000
+2025-08-03 20:05:52,585 - INFO - [33mPress CTRL+C to quit[0m
+2025-08-03 20:05:52,587 - INFO -  * Restarting with stat
+2025-08-03 20:05:52,954 - INFO - Starting Flask application
+2025-08-03 20:05:52,967 - WARNING -  * Debugger is active!
+2025-08-03 20:05:52,980 - INFO -  * Debugger PIN: 765-752-686
+2025-08-03 20:06:15,162 - INFO - Health check requested
+2025-08-03 20:06:15,162 - INFO - 127.0.0.1 - - [03/Aug/2025 20:06:15] "GET /health HTTP/1.1" 200 -
