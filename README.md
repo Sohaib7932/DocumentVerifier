@@ -1,12 +1,12 @@
 # Face Verification Flask API
 
-A Flask-based REST API for face verification using video files. This application compares faces from two video sources (user selfie video and document/ID video) to verify identity.
+A Flask-based REST API for face verification using image files. This application compares faces from two image sources (user selfie image and document/ID image) to verify identity.
 
 ## Features
 
-- **Upload User Video**: Accept and store user selfie video
-- **Upload Document Video**: Accept and store ID/passport video with user's face
-- **Face Verification**: Compare faces from both videos with 80% similarity threshold
+- **Upload User Image**: Accept and store user selfie image
+- **Upload Document Image**: Accept and store ID/passport image with user's face
+- **Face Verification**: Compare faces from both images with 80% similarity threshold
 
 ## Tech Stack
 
@@ -34,35 +34,35 @@ A Flask-based REST API for face verification using video files. This application
 
 2. **API Endpoints**:
 
-### Upload User Video
+### Upload User Image
 ```http
-POST /upload_user_video
+POST /upload_user_image
 Content-Type: multipart/form-data
 
 Form data:
-- file: video file (user selfie)
+- file: image file (user selfie)
 ```
 
 **Response**:
 ```json
 {
-  "message": "User video uploaded successfully"
+  "message": "User image uploaded successfully"
 }
 ```
 
-### Upload Document Video
+### Upload Document Image
 ```http
-POST /upload_document_video
+POST /upload_document_image
 Content-Type: multipart/form-data
 
 Form data:
-- file: video file (ID/passport with face)
+- file: image file (ID/passport with face)
 ```
 
 **Response**:
 ```json
 {
-  "message": "Document video uploaded successfully"
+  "message": "Document image uploaded successfully"
 }
 ```
 
@@ -86,12 +86,10 @@ or
 
 ## How It Works
 
-1. **Frame Extraction**: Both videos are processed to extract all frames
-2. **Face Detection**: Each frame is analyzed to detect faces using face_recognition library
-3. **Face Encoding**: Detected faces are converted to 128-dimensional encodings
-4. **Mean Encoding**: Calculate average encoding across all frames for each video
-5. **Comparison**: Compare the mean encodings using Euclidean distance
-6. **Verification**: Return `true` if similarity ≥ 80%, otherwise `false`
+1. **Face Detection**: Both images are analyzed to detect faces using face_recognition library
+2. **Face Encoding**: Detected faces are converted to 128-dimensional encodings
+3. **Comparison**: Compare the encodings using Euclidean distance
+4. **Verification**: Return `true` if similarity ≥ 80%, otherwise `false`
 
 ## Testing
 
@@ -103,11 +101,11 @@ You can test the API using tools like:
 ### Example with cURL:
 
 ```bash
-# Upload user video
-curl -X POST -F "file=@user_selfie.mp4" http://localhost:5000/upload_user_video
+# Upload user image
+curl -X POST -F "file=@user_selfie.jpg" http://localhost:5000/upload_user_image
 
-# Upload document video
-curl -X POST -F "file=@id_document.mp4" http://localhost:5000/upload_document_video
+# Upload document image
+curl -X POST -F "file=@id_document.jpg" http://localhost:5000/upload_document_image
 
 # Verify faces
 curl -X POST http://localhost:5000/verify_faces
@@ -120,14 +118,14 @@ DocumentVerifier/
 ├── app.py              # Main Flask application
 ├── requirements.txt    # Python dependencies
 ├── README.md          # This file
-└── uploads/           # Directory for uploaded videos (created automatically)
-    ├── user_video.mp4     # Latest user video
-    └── document_video.mp4 # Latest document video
+└── uploads/           # Directory for uploaded images (created automatically)
+    ├── user_image.jpg     # Latest user image
+    └── document_image.jpg # Latest document image
 ```
 
 ## Notes
 
-- Videos are temporarily stored in the `uploads/` directory
+- Images are temporarily stored in the `uploads/` directory
 - Each new upload overwrites the previous file
-- Supported video formats: MP4, AVI, MOV (depends on OpenCV support)
+- Supported image formats: JPEG, PNG
 - The application runs in debug mode for development

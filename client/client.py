@@ -31,6 +31,28 @@ def select_video_file(title):
     root.destroy()
     return file_path
 
+def select_image_file(title):
+    """Open file explorer to select an image file."""
+    # Create root window but hide it
+    root = tk.Tk()
+    root.withdraw()
+    
+    # Define image file types
+    file_types = [
+        ('Image files', '*.jpg *.jpeg *.png'),
+        ('JPEG files', '*.jpg *.jpeg'),
+        ('PNG files', '*.png'),
+        ('All files', '*.*')
+    ]
+    
+    file_path = filedialog.askopenfilename(
+        title=title,
+        filetypes=file_types
+    )
+    
+    root.destroy()
+    return file_path
+
 def check_server_health():
     """Check if the Flask server is running."""
     try:
@@ -128,18 +150,18 @@ def main():
         if upload_file("upload_user_video", user_video_path):
             break
     
-    # Get document video
+    # Get document image
     while True:
-        print("\n📁 Please select the DOCUMENT video file...")
+        print("\n📁 Please select the DOCUMENT image file...")
         print("Opening file explorer...")
-        document_video_path = select_video_file("Select Document Video File")
+        document_image_path = select_image_file("Select Document Image File")
         
-        if not document_video_path:
+        if not document_image_path:
             print("❌ No file selected. Please try again.")
             continue
             
-        print(f"Selected file: {os.path.basename(document_video_path)}")
-        if upload_file("upload_document_video", document_video_path):
+        print(f"Selected file: {os.path.basename(document_image_path)}")
+        if upload_file("upload_document_image", document_image_path):
             break
     
     # Verify faces
