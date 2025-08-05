@@ -460,3 +460,88 @@
 2025-08-04 16:14:06,992 - INFO - Similarity methods - Correlation: 61.96%, Chi-Square: 0.71%, Intersection: 100.00%, Cosine: 87.19%
 2025-08-04 16:14:06,992 - INFO - Face verification completed: similarity=72.05%, verified=True
 2025-08-04 16:14:06,993 - INFO - 127.0.0.1 - - [04/Aug/2025 16:14:06] "POST /verify_faces HTTP/1.1" 200 -
+2025-08-04 18:08:28,615 - INFO - Starting Flask application with OpenCV face verification
+2025-08-04 18:08:28,768 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.18.68:5000
+2025-08-04 18:08:28,768 - INFO - [33mPress CTRL+C to quit[0m
+2025-08-04 18:08:28,769 - INFO -  * Restarting with stat
+2025-08-04 18:08:29,387 - INFO - Starting Flask application with OpenCV face verification
+2025-08-04 18:08:29,410 - WARNING -  * Debugger is active!
+2025-08-04 18:08:29,418 - INFO -  * Debugger PIN: 765-752-686
+2025-08-04 18:08:44,671 - INFO - Health check requested
+2025-08-04 18:08:44,673 - INFO - 127.0.0.1 - - [04/Aug/2025 18:08:44] "GET /health HTTP/1.1" 200 -
+2025-08-04 18:09:00,610 - INFO - Received request to upload user video
+2025-08-04 18:09:00,651 - INFO - Removed old file: document_image.jpg
+2025-08-04 18:09:00,663 - INFO - Removed old file: document_video.mp4
+2025-08-04 18:09:00,669 - INFO - Removed old file: user_video.mp4
+2025-08-04 18:09:00,726 - INFO - File saved successfully: user_video.mp4 (original: IMG_6188.MOV)
+2025-08-04 18:09:00,727 - INFO - User video uploaded successfully: uploads\user_video.mp4
+2025-08-04 18:09:00,728 - INFO - 127.0.0.1 - - [04/Aug/2025 18:09:00] "POST /upload_user_video HTTP/1.1" 200 -
+2025-08-04 18:09:42,134 - INFO - Starting Flask application with OpenCV face verification
+2025-08-04 18:09:42,209 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.18.68:5000
+2025-08-04 18:09:42,210 - INFO - [33mPress CTRL+C to quit[0m
+2025-08-04 18:09:42,214 - INFO -  * Restarting with stat
+2025-08-04 18:09:42,798 - INFO - Starting Flask application with OpenCV face verification
+2025-08-04 18:09:42,837 - WARNING -  * Debugger is active!
+2025-08-04 18:09:42,843 - INFO -  * Debugger PIN: 765-752-686
+2025-08-04 18:09:55,923 - INFO - Health check requested
+2025-08-04 18:09:55,924 - INFO - 127.0.0.1 - - [04/Aug/2025 18:09:55] "GET /health HTTP/1.1" 200 -
+2025-08-04 18:10:03,329 - INFO - Received request to upload user video
+2025-08-04 18:10:03,503 - INFO - File saved successfully: user_video.mp4 (original: Face_liveness.mp4)
+2025-08-04 18:10:03,503 - INFO - User video uploaded successfully: uploads\user_video.mp4
+2025-08-04 18:10:03,505 - INFO - 127.0.0.1 - - [04/Aug/2025 18:10:03] "POST /upload_user_video HTTP/1.1" 200 -
+2025-08-04 18:10:08,554 - INFO - Received request to upload document image
+2025-08-04 18:10:08,556 - INFO - File saved successfully: document_image.jpg (original: Passport.jpg)
+2025-08-04 18:10:08,557 - INFO - Document image uploaded successfully: uploads\document_image.jpg
+2025-08-04 18:10:08,557 - INFO - 127.0.0.1 - - [04/Aug/2025 18:10:08] "POST /upload_document_image HTTP/1.1" 200 -
+2025-08-04 18:10:10,601 - INFO - Received request to verify faces
+2025-08-04 18:10:10,602 - INFO - Processing user video for face verification
+2025-08-04 18:10:10,965 - INFO - Processing video: uploads\user_video.mp4 with 1208 frames
+2025-08-04 18:11:01,086 - INFO - Found 692 faces in video
+2025-08-04 18:11:01,091 - INFO - Processing document image for face verification
+2025-08-04 18:11:01,092 - INFO - Processing image: uploads\document_image.jpg
+2025-08-04 18:11:01,116 - INFO - Image loaded successfully, shape: (720, 1280)
+2025-08-04 18:11:01,223 - INFO - Found 2 faces in image
+2025-08-04 18:11:01,292 - INFO - Generated face features for largest face (size: 139x139)
+2025-08-04 18:11:01,297 - INFO - Similarity methods - Correlation: 63.45%, Chi-Square: 1.00%, Intersection: 100.00%, Cosine: 85.08%
+2025-08-04 18:11:01,298 - INFO - Face verification completed: similarity=72.10%, verified=True
+2025-08-04 18:11:01,299 - INFO - 127.0.0.1 - - [04/Aug/2025 18:11:01] "POST /verify_faces HTTP/1.1" 200 -
+2025-08-04 20:23:23,197 - INFO - Starting Flask application with OpenCV face verification
+2025-08-04 20:23:23,274 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.18.68:5000
+2025-08-04 20:23:23,274 - INFO - [33mPress CTRL+C to quit[0m
+2025-08-04 20:23:23,277 - INFO -  * Restarting with stat
+2025-08-04 20:23:23,649 - INFO - Starting Flask application with OpenCV face verification
+2025-08-04 20:23:23,668 - WARNING -  * Debugger is active!
+2025-08-04 20:23:23,673 - INFO -  * Debugger PIN: 765-752-686
+2025-08-04 20:23:36,510 - INFO - Health check requested
+2025-08-04 20:23:36,512 - INFO - 127.0.0.1 - - [04/Aug/2025 20:23:36] "GET /health HTTP/1.1" 200 -
+2025-08-04 20:23:44,285 - INFO - Received request to upload user video
+2025-08-04 20:23:44,379 - INFO - Removed old file: document_image.jpg
+2025-08-04 20:23:44,384 - INFO - Removed old file: user_video.mp4
+2025-08-04 20:23:44,466 - INFO - File saved successfully: user_video.mp4 (original: Face_liveness.mp4)
+2025-08-04 20:23:44,466 - INFO - User video uploaded successfully: uploads\user_video.mp4
+2025-08-04 20:23:44,469 - INFO - 127.0.0.1 - - [04/Aug/2025 20:23:44] "POST /upload_user_video HTTP/1.1" 200 -
+2025-08-04 20:23:53,549 - INFO - Received request to upload document image
+2025-08-04 20:23:53,554 - INFO - File saved successfully: document_image.jpg (original: Passport.jpg)
+2025-08-04 20:23:53,555 - INFO - Document image uploaded successfully: uploads\document_image.jpg
+2025-08-04 20:23:53,557 - INFO - 127.0.0.1 - - [04/Aug/2025 20:23:53] "POST /upload_document_image HTTP/1.1" 200 -
+2025-08-04 20:23:55,592 - INFO - Received request to verify faces
+2025-08-04 20:23:55,592 - INFO - Processing user video for face verification
+2025-08-04 20:23:55,808 - INFO - Processing video: uploads\user_video.mp4 with 1208 frames
+2025-08-04 20:24:40,583 - INFO - Found 692 faces in video
+2025-08-04 20:24:40,596 - INFO - Processing document image for face verification
+2025-08-04 20:24:40,596 - INFO - Processing image: uploads\document_image.jpg
+2025-08-04 20:24:40,647 - INFO - Image loaded successfully, shape: (720, 1280)
+2025-08-04 20:24:40,741 - INFO - Found 2 faces in image
+2025-08-04 20:24:40,744 - INFO - Generated face features for largest face (size: 139x139)
+2025-08-04 20:24:40,748 - INFO - Similarity methods - Correlation: 63.45%, Chi-Square: 1.00%, Intersection: 100.00%, Cosine: 85.08%
+2025-08-04 20:24:40,749 - INFO - Face verification completed: similarity=72.10%, verified=True
+2025-08-04 20:24:40,750 - INFO - 127.0.0.1 - - [04/Aug/2025 20:24:40] "POST /verify_faces HTTP/1.1" 200 -
